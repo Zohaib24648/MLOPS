@@ -14,7 +14,7 @@ class IngestData:
         pass
 
     def get_data(self) -> pd.DataFrame:
-        df = pd.read_csv("./data/olist_customers_dataset.csv")
+        df = pd.read_csv("./data/FYP.csv")
         return df
 
 
