@@ -1,8 +1,7 @@
-from zenml.steps import BaseParameters
+from zenml.config.base_settings import BaseSettings as BaseParameters
 
 
 class ModelNameConfig(BaseParameters):
-    """Model Configurations"""
-
-    model_name: str = "lightgbm"
-    fine_tuning: bool = False
+    """Model Configurations for Loan Default Prediction"""
+    model_name: str = "xgboost"  # Options: xgboost, lightgbm, randomforest, catboost, logistic_regression
+    fine_tuning: bool = True  # Enable hyperparameter tuning
